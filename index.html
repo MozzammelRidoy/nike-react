@@ -39,33 +39,44 @@
   <body style="font-family: 'Rubik', sans-serif;">
 
 
-    <header class="mx-auto container sm:px-12 px-4 bg-headingColor">
+    <header>
 
-      <section>
+      <section id="home">
         <!-- Navigation Start  -->
-        <nav class="hidden sm:inline-flex lg:visible ">
-          <div class="flex items-center justify-between py-5 ">
-            <div>
-              <img src="icons/Logo.png" class="w-1/4 block" alt="" srcset="">
-
+        <nav class="hidden sm:inline-flex lg:visible fixed ">
+            <div class="mx-auto mt-0 container sm:px-12 px-4 flex items-center justify-between py-4  pr-12 bg-headingColor">
+              <div class="w-1/2">
+                <img src="icons/Logo.png" class="w-1/2" alt="" >
+  
+              </div>
+              <div class="flex list-none gap-x-5  font-semibold text-ShoesHeading">
+              
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#casual-shoes ">Casual Shoes</a></li>
+                  <li><a href="#Formal-shoes">Formal Shoes</a></li>
+                  <li><a href="#">About Us</a></li>
+               
+              </div>
             </div>
-            <div>
-              <ul class="flex gap-x-4 ">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
+         
+          </nav>
+        </section>
+          
+          <nav class="sm:hidden md:hidden">
+            <div class="flex justify-between items-center px-4 py-5">
+              <div class="">
+                <img src="icons/Logo.png" class="w-2/3" alt="" >
+              </div>
+              <div class="hover:">
+                <a href="#"><i class="fa-solid fa-bars text-2xl"></i></a>
+              </div>
             </div>
-          </div>
-        </nav>
-        <nav class="sm:hidden md:hidden">
-          <div class="items-center py-5 ">
-              <img src="icons/Logo.png" class="w-full" alt="" srcset="">
-            </div>
-            </nav>
+            
+          </nav>
+          
+        <section>
           <!-- Cover Area Start -->
-          <div class=" sm:flex sm:items-center sm:justify-evenly sm:gap-x-5 sm:pt-10 sm:pb-32 pb-14 pt-0">
+          <div class="mx-auto container sm:px-12 px-4 bg-headingColor sm:flex sm:items-center sm:justify-evenly sm:gap-x-5 sm:pt-10 sm:pb-32 pb-14 pt-0">
             
             
 
@@ -89,7 +100,7 @@
 
     <main>
       <!-- Casual Shoes Part  -->
-      <section class="sm:px-12 px-4 mx-auto container pt-3">
+      <section class="sm:px-12 px-4 mx-auto container pt-3" id="casual-shoes">
           <h2 style="font-family: 'Yanone Kaffeesatz', sans-serif;" class="text-3xl tracking-tighter text-ShoesHeading  font-bold uppercase">Casual Shoes</h2>
 
 
@@ -159,7 +170,7 @@
       </section>
        <!-- Formal Shoes Part  -->
 
-       <section class="sm:px-12 px-4 mx-auto container pt-10">
+       <section class="sm:px-12 px-4 mx-auto container pt-10" id="Formal-shoes">
         <h2 style="font-family: 'Yanone Kaffeesatz', sans-serif;" class="text-3xl tracking-tighter text-ShoesHeading  font-bold uppercase">Formal Shoes</h2>
 
 
@@ -227,17 +238,65 @@
 
         </div>
     </section>
+       
+      <!-- Service  Area  -->
+   <!-- <section>
+    <div class="grid grid-cols-2 gap-7 py-12">
+      <div class=" h-32 border-2 bg-slate-600">1</div>
+      <div class="row-span-3">
+        <img src="icons/XMLID 1.png" alt="">
+      </div>
+      <div class=" h-32 border-2 bg-slate-600">3</div>
+      <div class=" h-32 border-2 bg-slate-600">4</div>
+    </div>
+
+   </section> -->
+
+   <section class="sm:mb-30 mb-20 sm:mt-20 mt-10">
+    <!-- Our Benefit  -->
+    <div class="grid sm:grid-cols-2 sm:gap-7 gap-5 sm:pt-6">
+      <div class="sm:order-first rounded-xl sm:shadow-lg bg-white sm:flex sm:flex-row gap-4 sm:px-10  flex flex-col items-center justify-center sm:items-center sm:justify-center h-52 sm:h-32 ">
+        <img src="icons/image 12.png" class="w-20 h-20 " alt="">
+        <div class="flex flex-col text-center sm:text-start px-10 sm:px-0">
+          <h3 class="text-2xl sm:text-3xl font-semibold">Find the Perfect Fit</h3>
+          <p>Everybody is different, which is why we
+            offer styles for every body.</p>
+        </div>
+      </div>
+      <div class="order-first gap-6 flex sm:px-10 items-center justify-center  sm:row-span-3">
+        <img src="icons/XMLID 1.png" alt="">
+      </div>
 
 
+
+     <div class="sm:order-first rounded-xl sm:shadow-lg bg-white sm:flex sm:flex-row gap-4 sm:px-10  flex flex-col items-center justify-center sm:items-center sm:justify-center h-52 sm:h-32 ">
+        <img src="icons/image 13.png" class="w-20 h-20 " alt="">
+        <div class="flex flex-col text-center sm:text-start px-10 sm:px-0">
+          <h3 class="text-2xl sm:text-3xl font-semibold">Free Exchanges</h3>
+          <p>One of the many reasons you can shop
+            with peace of mind.</p>
+        </div>
+      </div>
+
+
+
+      <div class="sm:order-first rounded-xl sm:shadow-lg bg-white sm:flex sm:flex-row gap-4 sm:px-10  flex flex-col items-center justify-center sm:items-center sm:justify-center h-52 sm:h-32 ">
+        <img src="icons/image 14.png" class="w-20 h-20 " alt="">
+        <div class="flex flex-col text-center sm:text-start px-10 sm:px-0">
+          <h3 class="text-2xl sm:text-3xl font-semibold">Contact Our Seller</h3>
+          <p>They are here to help you. That's quite 
+            literally what we pay them for.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
     </main>
 
-    <footer>
-
-
-
-
-    </footer>
+    <footer class="bg-gray-950">
+      <p class="text-xs text-center text-white p-6">Develop by <i class="fa-regular fa-copyright"></i> Mozzammel Ridoy</p>
+     </footer>
 
 
 
